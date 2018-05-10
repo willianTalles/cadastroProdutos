@@ -3,8 +3,7 @@
 
 #include "produto.h"
 
-class Fruta : public Produto
-{
+class Fruta : public Produto{
 public:
 	Fruta();
 	Fruta(std::string _codigo, std::string _descricao, short _preco, 
