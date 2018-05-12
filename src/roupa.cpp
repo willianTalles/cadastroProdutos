@@ -7,7 +7,7 @@ Roupa::Roupa(string codigo,
     string descricao, 
     short preco, 
     string marca, 
-    char sexo, 
+    string sexo, 
     string tamanho):
         Produto(codigo, descricao, preco), 
         marca(marca), 
@@ -20,7 +20,7 @@ string Roupa::getMarca(){
     return this->marca;
 }
 
-char Roupa::getSexo(){
+string Roupa::getSexo(){
     return this->sexo;
 }
 
@@ -32,7 +32,7 @@ void Roupa::setMarca(string marca){
     this->marca = marca;
 }
 
-void Roupa::setSexo(char sexo){
+void Roupa::setSexo(string sexo){
     this->sexo = sexo;
 }
 
@@ -41,6 +41,7 @@ void Roupa::setTamanho(string tamanho){
 }
 
 std::ostream& Roupa::print(std::ostream &o) const {
+    o << "---------- ROUPA: ";
 	o << std::setfill (' ') << std::setw (10) << m_cod_barras << " | " 
 		<< std::setfill ('.') << std::setw (20) << m_descricao << " | " 
 		<< std::setfill (' ') << std::setw (5) << m_preco << " | "

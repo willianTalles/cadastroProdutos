@@ -9,20 +9,20 @@ using std::string;
 class Roupa : public Produto{
 	private:
 		string marca;
-		char sexo;
+		string sexo;
 		string tamanho;
 	public:
 		Roupa();
 		Roupa(string codigo, string descricao, short preco, 
-			string marca, char sexo, string tamanho);
+			string marca, string sexo, string tamanho);
 		~Roupa();
 		// getters
 		string getMarca();
-		char getSexo();
+		string getSexo();
 		string getTamanho();
 		// setters
 		void setMarca(string marca);
-		void setSexo(char sexo);
+		void setSexo(string sexo);
 		void setTamanho(string tamanho);
 	private:
 		std::ostream& print(std::ostream &o) const;

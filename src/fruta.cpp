@@ -35,9 +35,10 @@ std::ostream& operator<< (std::ostream &o, Fruta const &p) {
  
 std::ostream& 
 Fruta::print(std::ostream &o) const {
+	o << "---------- FRUTA: ";
 	o << std::setfill (' ') << std::setw (10) << m_cod_barras << " | " 
 		<< std::setfill ('.') << std::setw (20) << m_descricao << " | " 
-		<< std::setfill (' ') << std::setw (5) << m_preco << " | "
+		<< std::setfill (' ') << std::setw (5)  << m_preco << std::setprecision (3) << " | "
 		<< std::setfill (' ') << std::setw (10) << m_data_lote << " | " 
 		<< std::setfill (' ') << std::setw (3) << m_validade;
 	return o;
