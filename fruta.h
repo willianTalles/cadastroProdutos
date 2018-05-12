@@ -19,6 +19,7 @@ public:
 	// setters
 	void setDataLote(std::string _data);
 	void setValidade(short _validade);
+	friend std::ostream& operator<< (std::ostream &o, Fruta const &t);
 private:
 	std::ostream& print(std::ostream &o) const;
 };

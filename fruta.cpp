@@ -28,6 +28,10 @@ void
 Fruta::setValidade(short _validade) {
 	m_validade = _validade;
 }
+
+std::ostream& operator<< (std::ostream &o, Fruta const &p) {
+	return p.print(o);
+}
  
 std::ostream& 
 Fruta::print(std::ostream &o) const {
