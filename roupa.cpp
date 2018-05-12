@@ -46,6 +46,6 @@ std::ostream& Roupa::print(std::ostream &o) const {
 		<< std::setfill (' ') << std::setw (5) << m_preco << " | "
 		<< std::setfill (' ') << std::setw (10) << this->marca << " | " 
 		<< std::setfill (' ') << std::setw (3) << this->sexo << " | " 
-        << std::setfill (' ') << std::setw (3) << this->tamanho << " | " ;
+        << std::setfill (' ') << std::setw (3) << this->tamanho ;
 	return o;
 }

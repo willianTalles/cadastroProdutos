@@ -13,7 +13,7 @@ class Roupa : public Produto{
 		string tamanho;
 	public:
 		Roupa();
-		Roupa(string _codigo, string _descricao, short _preco, 
+		Roupa(string codigo, string descricao, short preco, 
 			string marca, char sexo, string tamanho);
 		~Roupa();
 		// getters
