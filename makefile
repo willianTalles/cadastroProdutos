@@ -1,5 +1,5 @@
 # Makefile for "laboratório 3"
-# Created by Bruno César 10/05/2018
+# Created by Willian Talles M. Dantas 10/05/2018
 #
 # Makefile completo separando os diferentes elementos da aplicacao como codigo (src),
 # cabecalhos (include), executáveis (build), bibliotecas (lib), etc.
